@@ -338,6 +338,10 @@ z_indx_3{
     backdrop-filter: blur(5px);
 }
 
+button{
+    cursor: pointer;
+}
+
 button:hover{
     transform: scale(1.2);
     box-shadow: 0 0 7px rgba(255, 0, 0) inset;

@@ -1,0 +1,190 @@
+/* reset styles */
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    list-style-type: none;
+}
+
+/* adding fonts */
+@font-face {
+    font-family: aeonik;
+    src: url("/assets/fonts/other/Aeonik/fonnts.com-Aeonik-Regular.ttf");
+}
+@font-face {
+    font-family: secure;
+    src: url("/assets/fonts/other/SourceCodePro/SourceCodePro-Medium.otf");
+}
+
+html{
+    font-size: 16px;
+}
+
+/* font family aeonik */
+.ff_aeonik{
+    font-family: aeonik;
+}
+
+/* font family secure code pro */
+.ff_secure{
+    font-family: secure;
+}
+
+/* font family monospace */
+.ff_ms{
+    font-family:monospace;
+}
+
+.border{
+    border: 1px solid blue;
+}
+
+/* gray background color */
+.bg_gray{
+    background-color: #F4F4F4;
+}
+
+/* black background color */
+.bg_black{
+    background-color:#010101;
+}
+
+/* color white */
+.clr_white{
+    color: white;
+}
+
+/* width 100% */
+.w_100{
+    width: 100%;
+}
+
+/* width 50% */
+.w_50{
+    width: 50%;
+}
+
+/* width 65% */
+.w_65{
+    width: 65%;
+}
+/* width 90% */
+.w_90{
+    width: 90%;
+}
+
+/* width 30% */
+.w_30{
+    width: 30%;
+}
+/* width 45% */
+.w_45{
+    width: 45%;
+}
+
+/* width 5% */
+.w_5{
+    width: 5%;
+}
+
+/* height 4vw */
+.h_4vw{
+    height: 4vw;
+}
+
+/* height 5% */
+.h_5{
+    height: 5%;
+}
+/* height 100% */
+.h_100{
+    height: 100%;
+}
+
+/* flex display */
+.d_flex{
+    display: flex;
+}
+
+/* flex diraction column */
+.flex_dir{
+    flex-direction: column;
+}
+
+/* align items center */
+.align_items_center{
+    align-items: center;
+}
+
+/* justify content center */
+.justify_content_center{
+    justify-content: center;
+}
+
+/* height 40vw */
+.h_40vw{
+    height: 40vw;
+}
+
+/*gap 10%  */
+.gap_10{
+    gap: 10%;
+}
+
+/* margin-left 5% */
+.mrg_left_5{
+    margin-left: 5%;
+}
+
+/* margin top 4% */
+.mrg_top_4{
+    margin-top: 4%;
+}
+/* margin top 4% */
+.mrg_top_10{
+    margin-top: 10%;
+}
+/* margin top 4% */
+.mrg_top_15{
+    margin-top: 15%;
+}
+
+/* margin bottom 5% */
+.mrg_btm_5{
+    margin-bottom: 5%;
+}
+/* margin bottom 10% */
+.mrg_btm_10{
+    margin-bottom: 10%;
+}
+
+/* padding top 5% */
+.pad_top_5{
+    padding-top: 5%;
+}
+
+/* font size 3.5 vw */
+.fs_3_5vw{
+    font-size: 3.5vw;
+}
+
+header ul{
+    font-size: 0.9rem;
+}
+
+/* position absolute */
+.pos_abs{
+    position: absolute;
+}
+
+/* right 0 */
+.right_0{
+    right: 0;
+}
+
+/* bottom -5% */
+.btm_-5{
+    bottom: -5%;
+}

@@ -50,6 +50,10 @@ html{
 .bg_black{
     background-color:#010101;
 }
+/* white background color */
+.bg_white{
+    background-color:white;
+}
 
 /* color white */
 .clr_white{
@@ -183,8 +187,22 @@ header ul{
 .right_0{
     right: 0;
 }
+/* left 40 */
+.left_40{
+    left: 40%;
+}
 
 /* bottom -5% */
 .btm_-5{
     bottom: -5%;
+}
+
+/* top 55% */
+.top_55{
+    top: 55%;
+}
+
+/* box shadow black */
+bsh_black{
+    box-shadow: 0 0 10px black;
 }

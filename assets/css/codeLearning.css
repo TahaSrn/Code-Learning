@@ -97,6 +97,10 @@ html{
 .w_15{
     width: 15%;
 }
+/* width 10% */
+.w_10{
+    width: 10%;
+}
 /* width 30% */
 .w_30{
     width: 30%;
@@ -123,6 +127,14 @@ html{
 /* height 5% */
 .h_5{
     height: 5%;
+}
+/* height 10% */
+.h_10{
+    height: 10%;
+}
+/* height 35% */
+.h_35{
+    height: 35%;
 }
 /* height 80% */
 .h_80{
@@ -279,14 +291,18 @@ header ul{
 .btm_-5{
     bottom: -5%;
 }
+/* bottom -12% */
+.btm_-12{
+    bottom: -12%;
+}
 /* bottom -13.5% */
 .btm_-13_5{
     bottom: -13.5%;
 }
 
-/* top 45% */
-.top_45{
-    top: 45%;
+/* top 35% */
+.top_35{
+    top: 35%;
 }
 
 /* box shadow black */
@@ -315,4 +331,14 @@ z_indx_3{
 /* border none */
 .border_none{
     border: none;
+}
+
+/* backdrop blur */
+.blur{
+    backdrop-filter: blur(5px);
+}
+
+button:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 7px rgba(255, 0, 0) inset;
 }

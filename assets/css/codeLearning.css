@@ -116,6 +116,10 @@ header ul{
 }
 /* ------------------width------------------ */
 
+/* width 2% */
+.w_2{
+    width: 4%;
+}
 /* width 5% */
 .w_5{
     width: 5%;
@@ -131,6 +135,10 @@ header ul{
 /* width 20% */
 .w_20{
     width: 20%;
+}
+/* width 25% */
+.w_25{
+    width: 25%;
 }
 /* width 30% */
 .w_30{
@@ -202,10 +210,22 @@ header ul{
 .align_items_center{
     align-items: center;
 }
+/* align items end */
+.align_items_end{
+    align-items: end;
+}
 
 /* justify content center */
 .justify_content_center{
     justify-content: center;
+}
+/* justify content space beetwin */
+.justify_content_spcb{
+    justify-content: space-between;
+}
+/* justify content space around */
+.justify_content_spca{
+    justify-content: space-around;
 }
 /* overflow hidden */
 .overf_hidden{
@@ -217,6 +237,10 @@ header ul{
 }
 /* -------------------heights--------------- */
 
+/* height 33% */
+.h_33{
+    height: 33%;
+}
 /* height 5% */
 .h_5{
     height: 5%;
@@ -229,21 +253,53 @@ header ul{
 .h_12{
     height: 12%;
 }
+/* height 15% */
+.h_15{
+    height: 15%;
+}
+/* height 20% */
+.h_20{
+    height: 20%;
+}
+/* height 25% */
+.h_25{
+    height: 25%;
+}
 /* height 28% */
 .h_28{
     height: 28%;
+}
+/* height 30% */
+.h_30{
+    height: 30%;
 }
 /* height 35% */
 .h_35{
     height: 35%;
 }
+/* height 40% */
+.h_40{
+    height: 40%;
+}
+/* height 35% */
+.h_45{
+    height: 45%;
+}
 /* height 50% */
 .h_50{
     height: 50%;
 }
+/* height 55% */
+.h_55{
+    height: 55%;
+}
 /* height 60% */
 .h_60{
     height: 60%;
+}
+/* height 65% */
+.h_65{
+    height: 65%;
 }
 /* height 70% */
 .h_70{
@@ -293,6 +349,10 @@ header ul{
 .h_22vw{
     height: 22vw;
 }
+/* height 30vw */
+.h_30vw{
+    height: 30vw;
+}
 /* height 35vw */
 .h_35vw{
     height: 35vw;
@@ -305,10 +365,26 @@ header ul{
 .h_45vw{
     height: 45vw;
 }
+/* height 50vw */
+.h_50vw{
+    height: 50vw;
+}
+/* height 65vw */
+.h_65vw{
+    height: 65vw;
+}
 /* ---------------gap------------------- */
+/*gap 2%  */
+.gap_2{
+    gap: 2%;
+}
 /*gap 5%  */
 .gap_5{
     gap: 5%;
+}
+/*gap 8%  */
+.gap_8{
+    gap: 8%;
 }
 /*gap 10%  */
 .gap_10{
@@ -331,11 +407,19 @@ header ul{
     gap: 2.5vw;
 }
 /* ---------------------margin-right---------------------- */
+/* margin-right 2% */
+.mrg_right_2{
+    margin-right:2%;
+}
 /* margin-right 5% */
 .mrg_right_5{
     margin-right: 5%;
 }
 /* ---------------------margin-left--------------------- */
+/* margin-left 2% */
+.mrg_left_2{
+    margin-left: 2%;
+}
 /* margin-left 5% */
 .mrg_left_5{
     margin-left: 5%;
@@ -360,6 +444,10 @@ header ul{
 /* margin top -45% */
 .mrg_top_-45{
     margin-top: -45%;
+}
+/* margin top 3% */
+.mrg_top_3{
+    margin-top: 3%;
 }
 /* margin top 4% */
 .mrg_top_4{
@@ -398,6 +486,10 @@ header ul{
     margin-top: 100%;
 }
 /* ---------------------margin-bottom----------------- */
+/* margin bottom 2% */
+.mrg_btm_2{
+    margin-bottom: 2%;
+}
 /* margin bottom 5% */
 .mrg_btm_5{
     margin-bottom: 5%;
@@ -470,6 +562,10 @@ header ul{
 .right_0{
     right: 0;
 }
+/* right 2% */
+.right_2{
+    right: 2%;
+}
 /* right 10 */
 .right_10{
     right: 10%;
@@ -487,6 +583,10 @@ header ul{
 .left_40{
     left: 40%;
 }
+/* left 25 */
+.left_25{
+    left: 25%;
+}
 /* ----------------top----------------- */
 /* top 25% */
 .top_25{
@@ -496,7 +596,15 @@ header ul{
 .top_35{
     top: 35%;
 }
+/* top 50% */
+.top_50{
+    top: 50%;
+}
 /* ---------------bottom------------- */
+/* bottom -15% */
+.btm_-15{
+    bottom: -25%;
+}
 /* bottom -13.5% */
 .btm_-13_5{
     bottom: -13.5%;
@@ -513,6 +621,14 @@ header ul{
 .btm_0{
     bottom: 0%;
 }
+/* bottom 4% */
+.btm_4{
+    bottom: 4%;
+}
+/* bottom 15% */
+.btm_15{
+    bottom: 15%;
+}
 /* bottom 20% */
 .btm_20{
     bottom: 20%;
@@ -522,6 +638,10 @@ header ul{
 /* box shadow black */
 .bsh_black{
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+/* box shadow yellow */
+.bsh_yellow{
+    box-shadow: 0 0 10px #def2479d;
 }
 
 /* -------------z-index---------------- */
@@ -550,6 +670,10 @@ header ul{
 .border{
     border: 1px solid blue;
 }
+/* black border */
+.border_blk{
+    border: 1px solid black;
+}
 /* border radius 10px */
 .border_rad10{
     border-radius: 10px;
@@ -565,6 +689,14 @@ header ul{
 /* border right */
 .border_right{
     border-right: 2px solid #E4E4E4;
+}
+/* border radius 50% */
+.border_rad50{
+    border-radius: 50%;
+}
+/* border bottom */
+.border_bottom{
+    border-bottom: 2px solid #E4E4E4;
 }
 /* ----------------beauty---------------- */
 /* transform */

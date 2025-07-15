@@ -21,6 +21,10 @@
     font-family: quivert;
     src: url("/assets/fonts/other/sport/Quivert.ttf");
 }
+@font-face {
+    font-family: inter;
+    src: url("/assets/fonts/other/inter/Inter-Regular.otf");
+}
 /* html tag styles */
 html{
     font-size: 16px;
@@ -52,6 +56,18 @@ header ul{
 .ff_qv{
     font-family: quivert;
     font-weight: 100;
+}
+/* font family inter */
+.ff_int{
+    font-family: inter;
+    font-weight: 100;
+}
+/* font_weight */
+.fw{
+    font-weight: 800;
+}
+.fw2{
+    font-weight: 400;
 }
 /* ------------------------colors------------------------- */
 /* gray background color */
@@ -93,6 +109,10 @@ header ul{
 /*background color yellow */
 .bg_yellow{
     background-color: #DDF247;
+}
+/*color yellow */
+.clr_yellow{
+    color: #DDF247;
 }
 /* ------------------width------------------ */
 
@@ -191,6 +211,10 @@ header ul{
 .overf_hidden{
     overflow: hidden;
 }
+/* vertical align */
+.vrt_al{
+    vertical-align: super;
+}
 /* -------------------heights--------------- */
 
 /* height 5% */
@@ -200,6 +224,10 @@ header ul{
 /* height 10% */
 .h_10{
     height: 10%;
+}
+/* height 12% */
+.h_12{
+    height: 12%;
 }
 /* height 28% */
 .h_28{
@@ -229,6 +257,10 @@ header ul{
 .h_80{
     height: 80%;
 }
+/* height 85% */
+.h_85{
+    height: 85%;
+}
 /* height 90% */
 .h_90{
     height: 90%;
@@ -236,6 +268,10 @@ header ul{
 /* height 100% */
 .h_100{
     height: 100%;
+}
+/* height 115% */
+.h_115{
+    height: 115%;
 }
 /* height 0.7vw */
 .h_0_7vw{
@@ -281,6 +317,10 @@ header ul{
 /*gap 15%  */
 .gap_15{
     gap: 15%;
+}
+/* gap 1.5vw */
+.gap_1_5vw{
+    gap: 1.5vw;
 }
 /* gap 2vw */
 .gap_2vw{
@@ -328,6 +368,10 @@ header ul{
 /* margin top 5% */
 .mrg_top_5{
     margin-top: 5%;
+}
+/* margin top 8% */
+.mrg_top_8{
+    margin-top: 8%;
 }
 /* margin top 10% */
 .mrg_top_10{
@@ -381,6 +425,10 @@ header ul{
 .fs_1_1vw{
     font-size: 1.1vw;
 }
+/* font size 1.3 vw */
+.fs_1_3vw{
+    font-size: 1.3vw;
+}
 /* font size 1.5 vw */
 .fs_1_5vw{
     font-size: 1.5vw;
@@ -388,6 +436,10 @@ header ul{
 /* font size 2 vw */
 .fs_2vw{
     font-size: 2vw;
+}
+/* font size 2.4 vw */
+.fs_2_4vw{
+    font-size: 2.4vw;
 }
 /* font size 2.5 vw */
 .fs_2_5vw{
@@ -427,11 +479,19 @@ header ul{
 .left_-15{
     left: -15%;
 }
+/* left 5 */
+.left_5{
+    left: 10%;
+}
 /* left 40 */
 .left_40{
     left: 40%;
 }
 /* ----------------top----------------- */
+/* top 25% */
+.top_25{
+    top: 25%;
+}
 /* top 35% */
 .top_35{
     top: 35%;
@@ -502,7 +562,10 @@ header ul{
 .border_none{
     border: none;
 }
-
+/* border right */
+.border_right{
+    border-right: 2px solid #E4E4E4;
+}
 /* ----------------beauty---------------- */
 /* transform */
 .transform_translate{
@@ -525,4 +588,16 @@ button:hover{
 /* rotate transform */
 .tr_rot{
     transform: rotate(29.5deg);
+}
+/* opacity 30% */
+.op30{
+    opacity: 30%;
+}
+/* letter spacing 1px */
+.let_spc1{
+    letter-spacing: 1px;
+}
+/* transform scale */
+.tr_scl:hover{
+    transform: scale(1.1);
 }

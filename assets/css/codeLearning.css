@@ -28,6 +28,7 @@
 /* html tag styles */
 html{
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 /* body tag styles */
 body{
@@ -148,10 +149,6 @@ header ul{
 .w_40{
     width: 40%;
 }
-/* width 45% */
-.w_45{
-    width: 45%;
-}
 /* width 50% */
 .w_50{
     width: 50%;
@@ -167,10 +164,6 @@ header ul{
 /* width 75% */
 .w_75{
     width: 75%;
-}
-/* width 85% */
-.w_85{
-    width: 85%;
 }
 /* width 90% */
 .w_90{
@@ -231,16 +224,16 @@ header ul{
 .overf_hidden{
     overflow: hidden;
 }
+/* overflow-x hidden */
+.overfx_hidden{
+    overflow-x: hidden;
+}
 /* vertical align */
 .vrt_al{
     vertical-align: super;
 }
 /* -------------------heights--------------- */
 
-/* height 33% */
-.h_33{
-    height: 33%;
-}
 /* height 5% */
 .h_5{
     height: 5%;
@@ -261,10 +254,6 @@ header ul{
 .h_20{
     height: 20%;
 }
-/* height 25% */
-.h_25{
-    height: 25%;
-}
 /* height 28% */
 .h_28{
     height: 28%;
@@ -272,6 +261,10 @@ header ul{
 /* height 30% */
 .h_30{
     height: 30%;
+}
+/* height 33% */
+.h_33{
+    height: 33%;
 }
 /* height 35% */
 .h_35{
@@ -293,10 +286,6 @@ header ul{
 .h_55{
     height: 55%;
 }
-/* height 60% */
-.h_60{
-    height: 60%;
-}
 /* height 65% */
 .h_65{
     height: 65%;
@@ -316,10 +305,6 @@ header ul{
 /* height 85% */
 .h_85{
     height: 85%;
-}
-/* height 90% */
-.h_90{
-    height: 90%;
 }
 /* height 100% */
 .h_100{
@@ -348,10 +333,6 @@ header ul{
 /* height 22vw */
 .h_22vw{
     height: 22vw;
-}
-/* height 30vw */
-.h_30vw{
-    height: 30vw;
 }
 /* height 35vw */
 .h_35vw{
@@ -397,10 +378,6 @@ header ul{
 /* gap 1.5vw */
 .gap_1_5vw{
     gap: 1.5vw;
-}
-/* gap 2vw */
-.gap_2vw{
-    gap: 2vw;
 }
 /* gap 2.5vw */
 .gap_2_5vw{
@@ -732,4 +709,324 @@ button:hover{
 /* transform scale */
 .tr_scl:hover{
     transform: scale(1.1);
+}
+
+/* ---------------------------mobile menu codes---------------- */
+.mobileMenu{
+    display: none;
+    width: 100%;
+}
+.mobileMenu a{
+    margin-left: 5%;
+}
+
+.menuSection{
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #F4F4F4;
+    width: 80%;
+    z-index: 101;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+}
+.menuSection:target{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.menuSection ul{
+    margin-left: 5%;
+    margin-top: 5%;
+    gap: 3vw;
+    font-size: 3vw;
+}
+.menuSection a{
+    margin-left: 5%;
+}
+
+/* ------------------------fixed button codes----------------- */
+.topArrow{
+    width: 6%;
+    position: fixed;
+    z-index: 150;
+    right: 1%;
+    bottom: 0;
+}
+.topArrow img{
+    width: 100%;
+}
+
+
+/* -----------------------------media coery codes------------------------------ */
+@media (max-width:420px) {
+    /* header */
+    header{
+        flex-direction: column;
+    }
+    .firstSection{
+        width: 100%;
+        height: 85vw;
+    }
+    .secondSection{
+        width: 100%;
+        height: 100vw;
+    }
+    .lineImg{
+        position: relative;
+        width: 85%;
+        height: 70%;
+        margin-left: 15%;
+        margin-top: 30%;
+    }
+    .codeCollection{
+        width: 50%;
+        height: 35%;
+        margin-left: 20%;
+    }
+    .codePart{
+        font-size: 1.6vw;
+    }
+    .alexName{
+        font-size: 2.5vw;
+    }
+    .headerList{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .headersHead{
+        margin-top: 0;
+        font-size: 5.5vw;
+    }
+    .headerP{
+        font-size: 2.5vw;
+    }
+    .headersButton{
+        font-size: 3.2vw;
+        height: 10%;
+    }
+    .cardsSection{
+        flex-direction: column;
+        height: 80vw;
+        overflow-y: auto;
+    }
+    .leftCardSection{
+        width: 100%;
+        text-align: center;
+    }
+    .leftCardSection h2{
+        font-size: 5vw;
+        margin-top: 0;
+    }
+    .leftCardSection p{
+        margin-top: 1%;
+        font-size: 2vw;
+    }
+    .cardsSelector{
+        width: 100%;
+        margin-top: 3%;
+        justify-content: center;
+        margin-left: 0;
+        gap: 2%;
+        margin-bottom: 1%;
+    }
+    .internalCardsSelector{
+        width: 5%;
+    }
+    .internalCardsSelector1{
+        width: 10%;
+    }
+    .cardsRightSection{
+        width: 100%;
+        justify-content: center;
+    }
+    .internalCardsRightSection2{
+        width: 55%;
+        height: 100%;
+        margin-left: 0;
+
+    }
+    .internalCardsRightSection1 ,.internalCardsRightSection3{
+        display: none;
+    }
+    .internalCardsRightSection2 h3{
+        font-size: 5vw;
+        margin-top: -5%;
+    }
+    .internalCardsRightSection2 p{
+        font-size: 3vw;
+        margin-bottom: 10%;
+    }
+    .codeSection{
+        flex-direction: column-reverse;
+    }
+    .codeSectionLeft{
+        width: 100%;
+        height: 60vw;
+    }
+    .codeText{
+        font-size: 1.8vw;
+    }
+    .codeSectionRight{
+        width: 100%;
+        align-items: center;
+    }
+    .codeSectionRight h3{
+        font-size: 7vw;
+    }
+    .codeSectionRight p{
+        font-size: 3vw;
+    }
+    .codeSectionRight button{
+        font-size: 3vw;
+        height: 10vw;
+        width: 60%;
+        color: #DDF247;
+        
+    }
+    .photoSection{
+        flex-direction: column;
+    }
+    .photoSectionLeft{
+        width: 100%;
+        text-align: center;
+    }
+    .photoSectionLeft h2{
+        font-size: 7.5vw;
+    }
+    .photoSectionLeftCards{
+        flex-direction: column;
+    }
+    .photoSectionLeftCard{
+        width: 100%;
+        margin-left: 0;
+        border: none;
+    }
+    .photoSectionLeftCard img{
+        width: 13%;
+        margin-top: 2%;
+    }
+    .photoSectionLeftCard h3{
+        font-size: 5vw;
+        margin-top: 4%;
+    }
+    .photoSectionLeftCard p{
+        font-size: 2vw;
+        margin-bottom: 3%;
+    }
+    .border_btm{
+        border-bottom: 1px solid #E4E4E4;
+    }
+    .photoSectionRight{
+        width: 100%;
+        height: 70vw;
+    }
+    .photoSectionRightBlack{
+        width: 70%;
+        height: 80%;
+    }
+    .photoSectionRightP1{
+        font-size: 3vw;
+    }
+    .photoSectionRightP2{
+        font-size: 5vw;
+    }
+    .buySection{
+        height: auto;
+    }
+    .buyHeader{
+        height: 20%;
+    }
+    .buyHeader h3{
+        font-size: 4vw;
+    }
+    .buyHeader p{
+        font-size: 2vw;
+    }
+    .buyHeader{
+        height: 20%;
+    }
+    .buyCards{
+        width: 100%;
+        height: 80%;
+        gap: 2vw;
+        flex-direction: column;
+    }
+    .buyCard{
+        width: 65%;
+    }
+    .buyCard h3{
+        font-size: 4vw;
+    }
+    .buyCard p{
+        font-size: 3vw;
+    }
+    .buyCard button{
+        font-size: 3vw;
+        height: 17%;
+    }
+    .questionSection{
+        height: 75vw;
+    }
+    .questionHead{
+        font-size: 4vw;
+    }
+    .questionPart{
+        height: 30vw;
+    }
+    .questionQ{
+        width: 45%;
+        font-size: 2.7vw;
+    }
+    .questionP{
+        width: 45%;
+        font-size: 2vw;
+        margin-top: 0;
+    }
+    .questionIcon{
+        height: 20%;
+        width: 5%;
+    }
+    .questionIcon2{
+        height: 45%;
+        width: 5%;
+    }
+    .yellowBanner{
+        width: 80%;
+        height: 55%;
+        left: 10%;
+        bottom: -30%;
+    }
+    .yellowBanner p{
+        font-size: 2.8vw;
+    }
+    .yellowBanner button{
+        font-size: 2.8vw;
+        height: 20%;
+    }
+    footer{
+        height: 50vw;
+    }
+    .topFooter{
+        flex-direction: column;
+        align-items: center;
+        height: 15vw;
+        gap: 35%;
+    }
+    .topFooter img{
+        width: 25%;
+    }
+    .topFooter ul{
+        justify-content: center;
+        gap: 10%;
+        font-size: 2.5vw;
+        width: 100%;
+    }
+    .topFooter h3{
+        font-size: 3vw;
+    }
+    .mobileMenu{
+        display: inline-block;
+    }
 }

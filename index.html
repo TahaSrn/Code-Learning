@@ -12,16 +12,22 @@
 <body>
 
     <!------------------------------------------------ creating the header --------------------------------->
-    <header class="w_100 d_flex">
+    <header class="w_100 d_flex" id="header">
 
         <!-- section for left side -->
-        <section class="w_50 bg_gray">
+        <section class="w_50 bg_gray firstSection">
+
+            <div class="mobileMenu">
+                <a href="#menuSection">
+                    <img src="/assets/images/menu.png" alt="">
+                </a>
+            </div>
 
             <!-- div for left sides top list -->
-            <div class="d_flex align_items_center gap_10 mrg_top_4">
+            <div class="d_flex align_items_center gap_10 mrg_top_4 headerList">
 
                 <a href="">
-                    <img class="w_90 h_5 mrg_left_5" src="/assets/images/rightArrow.png" alt="">
+                    <img class="w_65 h_5 mrg_left_5" src="/assets/images/rightArrow.png" alt="">
                 </a>
 
                 <ul class="d_flex gap_10 w_90 ff_aeonik fs_1_5vw">
@@ -33,21 +39,21 @@
             </div>
 
             <!-- div for left sides big paragraph -->
-            <div class="ff_secure fs_3_5vw mrg_left_5 mrg_top_4">
+            <div class="ff_secure fs_3_5vw mrg_left_5 mrg_top_4 headersHead">
                 Improve your <br> skills by ₰ study <br> with coding
             </div>
 
             <!-- div for left sides small paragraph and logo -->
             <div class="mrg_left_5">
                 <img class="pad_top_5 w_15" src="/assets/images/line.png" alt="">
-                <p class="ff_ms fs_1_5vw">Create, launch, and iterate on new <br> marketing campaigns without
+                <p class="ff_ms fs_1_5vw headerP">Create, launch, and iterate on new <br> marketing campaigns without
                     distracting <br>
                     your product team.</p>
             </div>
 
             <!-- div for left sides button -->
             <button
-                class="ff_aeonik w_30 fs_1_5vw bg_black clr_white h_4vw mrg_left_5 mrg_top_10 mrg_btm_10 border_none">
+                class="ff_aeonik w_30 fs_1_5vw bg_black clr_white h_4vw mrg_left_5 mrg_top_10 mrg_btm_10 border_none headersButton">
                 Get Started &nbsp;&nbsp; ↗
             </button>
 
@@ -55,12 +61,21 @@
 
 
         <!-- section for right side -->
-        <section class="w_50 bg_black pos_rel">
+        <section class="w_50 bg_black pos_rel secondSection">
+
+            <!-- div for fixed button -->
+            <div class="topArrow">
+                <a href="#header">
+                    <img src="/assets/images/topArrow.png" alt="">
+                </a>
+            </div>
             <!-- for yellow line(back of person) -->
-            <img class="w_90 pos_abs right_0 btm_20 z_indx_0" src="/assets/images/Line 1 (1).png" alt="">
+            <img class="w_90 pos_abs right_0 btm_20 z_indx_0 lineImg     height: 75vw;"
+                src="/assets/images/Line 1 (1).png" alt="">
 
             <!-- div for code collection -->
-            <div class="pos_abs bg_white w_65 left_-15 top_35 bsh_black h_22vw d_flex align_items_center z_indx_1">
+            <div
+                class="pos_abs bg_white w_65 left_-15 top_35 bsh_black h_22vw d_flex align_items_center z_indx_1 codeCollection">
 
                 <!-- div for left icon bar in code collection -->
                 <div
@@ -72,7 +87,7 @@
                 </div>
 
                 <!-- div for code part in code collection -->
-                <div class="ff_aeonik w_100 fs_1vw line_h_150 mrg_left_5">
+                <div class="ff_aeonik w_100 fs_1vw line_h_150 mrg_left_5 codePart">
                     <span class="clr_pink">public function</span> index() <br> - <br> $this-load-›model('feedbac" <br>
                     $data['feedbacks'] = $this- fee <br> if(count ($data['<span class="clr_purple">feedbacks'</span>]) §
                     <br> $this÷load-›view('admin/feedbl <br> try else { <br> t <br><span class="clr_pink"> // you can
@@ -87,10 +102,10 @@
             <!-- div for radio image and work -->
             <div class="d_flex align_items_center gap_10 w_50 pos_abs btm_0 h_10 blur z_indx_3">
                 <img class="mrg_left_5 w_10" src="/assets/images/Radio button.png" alt="">
-                <p class="clr_white ff_aeonik fs_1_5vw">Alex(Web developer)</p>
+                <p class="clr_white ff_aeonik fs_1_5vw alexName">Alex(Web developer)</p>
             </div>
 
-            <img class="pos_abs h_35 btm_-12 right_10 z_indx_4" src="/assets/images/mosalas.png" alt="">
+            <img class="pos_abs h_35 btm_-12 right_10 z_indx_4 img" src="/assets/images/mosalas.png" alt="">
 
         </section>
     </header>
@@ -105,10 +120,11 @@
             <img class="w_15" src="/assets/images/logo3.png" alt="">
         </section>
 
+
         <!-- creating first section -->
-        <section class="bg_gray h_35vw d_flex">
+        <section class="bg_gray h_35vw d_flex cardsSection">
             <!-- div for left part -->
-            <div class="w_40">
+            <div class="w_40 leftCardSection">
                 <h2 class="ff_qv line_h_150 fs_3_5vw mrg_left_5 mrg_top_15 d_inline">
                     Our Features <br> Special For You
                 </h2>
@@ -117,17 +133,17 @@
                     We provide various special <br> features for all of you
                 </p>
 
-                <div class="d_flex w_50 h_0_7vw mrg_left_5 mrg_top_10 gap_10">
-                    <div class="w_30 bg_yellow h_100 hover_anim"></div>
-                    <div class="w_20 bg_gray2 h_100 hover_anim"></div>
-                    <div class="w_20 bg_gray2 h_100 hover_anim"></div>
+                <div class="d_flex w_50 h_0_7vw mrg_left_5 mrg_top_10 gap_10 cardsSelector">
+                    <div class="w_30 bg_yellow h_100 hover_anim internalCardsSelector1"></div>
+                    <div class="w_20 bg_gray2 h_100 hover_anim internalCardsSelector"></div>
+                    <div class="w_20 bg_gray2 h_100 hover_anim internalCardsSelector"></div>
                 </div>
             </div>
             <!-- div for right part -->
-            <div class="w_60 d_flex align_items_center overf_hidden">
+            <div class="w_60 d_flex align_items_center overf_hidden cardsRightSection">
 
                 <!-- div for each card -->
-                <div class="w_40 bg_white h_20vw border_rad10 hover_anim">
+                <div class="w_40 bg_white h_20vw border_rad10 hover_anim internalCardsRightSection1">
 
                     <!-- div for cards image -->
                     <div class="mrg_left_15 mrg_top_20 mrg_btm_15">
@@ -145,7 +161,7 @@
                     </p>
                 </div>
 
-                <div class="w_40 bg_yellow h_20vw border_rad10 mrg_left_12 hover_anim">
+                <div class="w_40 bg_yellow h_20vw border_rad10 mrg_left_12 hover_anim internalCardsRightSection2">
 
                     <div class="mrg_left_15 mrg_top_20 mrg_btm_15">
                         <img class="w_20" src="/assets/images/customArrow2.png" alt="">
@@ -160,7 +176,8 @@
                     </p>
                 </div>
 
-                <div class="w_40 bg_white h_20vw border_rad10 hover_anim transform_translate pos_rel">
+                <div
+                    class="w_40 bg_white h_20vw border_rad10 hover_anim internalCardsRightSection3 transform_translate pos_rel">
 
                     <div class="mrg_left_15 mrg_top_20 mrg_btm_15">
                         <img class="w_20" src="/assets/images/customArrow3.png" alt="">
@@ -178,10 +195,11 @@
         </section>
 
         <!-- creating second section -->
-        <section class="d_flex bg_white align_items_center">
+        <section class="d_flex bg_white align_items_center codeSection">
 
             <!-- div for left part -->
-            <div class="w_60 h_40vw d_flex align_items_center justify_content_center pos_rel">
+            <div
+                class="w_60 h_40vw d_flex align_items_center justify_content_center pos_rel codeSectionLeft overf_hidden">
                 <!-- div for code collection -->
                 <div class="w_75 border_rad5 h_75 d_flex align_items_center bsh_black">
                     <!-- div for left icon bar in code collection -->
@@ -195,7 +213,7 @@
 
                     <!-- div for code part in code collection -->
                     <div class="mrg_top_4">
-                        <div class="ff_ms w_100 fs_1_1vw line_h_150 mrg_left_15">
+                        <div class="ff_ms w_100 fs_1_1vw line_h_150 mrg_left_15 codeText">
                             <span class="clr_pink">public function</span> index() <br> - <br>
                             $this-load-›model('feedbac"
                             <br>
@@ -219,11 +237,11 @@
                     </div>
                 </div>
 
-                <img class="w_30 pos_abs tr_rot right_0" src="/assets/images/mosalas.png" alt="">
+                <img class="w_30 pos_abs tr_rot right_0 " src="/assets/images/mosalas.png" alt="">
             </div>
 
             <!-- div for right part -->
-            <div class="w_40">
+            <div class="w_40 d_flex flex_dir codeSectionRight">
 
                 <h3 class="ff_qv fs_2_5vw line_h_150 mrg_left_10">The language for <br>building web pages</h3>
 
@@ -233,23 +251,24 @@
 
                 <button
                     class="ff_aeonik w_40 fs_1_5vw bg_black clr_white h_4vw mrg_left_10 mrg_top_10 mrg_btm_10 border_none">Try
-                    it Yourself&nbsp;&nbsp; ↗</button>
+                    it Yourself&nbsp;&nbsp; ↗
+                </button>
             </div>
 
         </section>
 
         <!-- section for next part -->
-        <section class="d_flex align_items_center w_100">
+        <section class="d_flex align_items_center w_100 photoSection">
             <!-- div for left part -->
-            <div class="w_50">
+            <div class="w_50 photoSectionLeft">
                 <h2 class="ff_qv line_h_150 fs_3_5vw mrg_left_5 mrg_top_15 d_inline">
                     Get up and running <br>fast together
                 </h2>
                 <!-- div for left part cards -->
-                <div class="d_flex w_100 mrg_top_10">
+                <div class="d_flex w_100 mrg_top_10 photoSectionLeftCards">
 
                     <!-- div for each card -->
-                    <div class="w_40 mrg_left_5 border_right">
+                    <div class="w_40 mrg_left_5 border_right photoSectionLeftCard border_btm">
 
                         <img class="w_25" src="/assets/images/univercity.png" alt="">
 
@@ -262,7 +281,7 @@
                         </p>
                     </div>
                     <!-- div for each card -->
-                    <div class="w_40 mrg_left_10">
+                    <div class="w_40 mrg_left_10 photoSectionLeftCard">
 
                         <img class="w_20" src="/assets/images/showcase.png" alt="">
 
@@ -279,18 +298,18 @@
             </div>
 
             <!-- div for right part -->
-            <div class="w_50 h_40vw d_flex justify_content_center">
+            <div class="w_50 h_40vw d_flex justify_content_center photoSectionRight">
 
                 <!-- div for black background -->
-                <div class="w_60 h_80 border_rad5 bg_black d_flex justify_content_center">
+                <div class="w_60 h_80 border_rad5 bg_black d_flex justify_content_center photoSectionRightBlack">
                     <!-- div for yellow background -->
-                    <div class="bg_yellow w_90 h_35 border_rad5 mrg_top_5 h_115 pos_rel">
+                    <div class="bg_yellow w_90 h_35 border_rad5 mrg_top_5 h_115 pos_rel overf_hidden">
 
-                        <p class="ff_aeonik fw fs_1_5vw op30 mrg_top_15 mrg_left_5">
+                        <p class="ff_aeonik fw fs_1_5vw op30 mrg_top_15 mrg_left_5 photoSectionRightP1">
                             TUTORS
                         </p>
 
-                        <p class="ff_aeonik fw fs_2_4vw op30 mrg_top_5 mrg_left_5 let_spc1">
+                        <p class="ff_aeonik fw fs_2_4vw op30 mrg_top_5 mrg_left_5 let_spc1 photoSectionRightP2">
                             Anthoney <br>Mills
                         </p>
 
@@ -305,10 +324,10 @@
         </section>
 
         <!-- start of buy section -->
-        <section class="d_flex flex_dir align_items_center h_45vw">
+        <section class="d_flex flex_dir align_items_center h_45vw buySection">
 
             <!-- div for header text -->
-            <div class="d_flex flex_dir gap_1_5vw">
+            <div class="d_flex flex_dir gap_1_5vw buyHeader">
 
                 <h3 class="ff_qv fs_2_5vw let_spc1 mrg_top_10">
                     Choose your package
@@ -320,9 +339,9 @@
             </div>
 
             <!-- div for buy cards -->
-            <div class="w_75 h_35vw d_flex align_items_center justify_content_center gap_5">
+            <div class="w_75 h_35vw d_flex align_items_center justify_content_center gap_5 buyCards">
                 <!-- div for each card -->
-                <div class="w_30 h_70 bg_gray3 border_rad5 text_align_center tr_scl">
+                <div class="w_30 h_70 bg_gray3 border_rad5 text_align_center tr_scl buyCard">
 
                     <h3 class="ff_aeonik fw2 fs_1_5vw mrg_top_15">
                         DEVELOPMENT
@@ -341,7 +360,7 @@
                         Now</button>
                 </div>
                 <!-- div for each card -->
-                <div class="w_30 h_85 border_rad5 text_align_center bg_black tr_scl pos_rel">
+                <div class="w_30 h_85 border_rad5 text_align_center bg_black tr_scl pos_rel buyCard">
 
                     <h3 class="ff_aeonik fw2 fs_1_5vw mrg_top_15 clr_white">
                         IT & SOFTWARE
@@ -363,17 +382,17 @@
                         Now</button>
                 </div>
                 <!-- div for each card -->
-                <div class="w_30 h_70 bg_gray3 border_rad5 text_align_center tr_scl">
+                <div class="w_30 h_70 bg_gray3 border_rad5 text_align_center tr_scl buyCard">
 
                     <h3 class="ff_aeonik fw2 fs_1_5vw mrg_top_15">
                         BUSINESS
                     </h3>
 
-                    <p class="ff_qv fs_2_4vw d_inline mrg_top_10">
+                    <p class="ff_qv fs_2_4vw d_inline mrg_top_10 price">
                         <span class="vrt_al fs_1_5vw mrg_right_5">$</span>30
                     </p>
 
-                    <p class="ff_aeonik fs_1_3vw mrg_top_10">
+                    <p class="ff_aeonik fs_1_3vw mrg_top_10 pa">
                         1 Module Javascript <br>1 Module Human Resources <br>2 Module Sales Teams
                     </p>
 
@@ -388,63 +407,67 @@
 
 
         <!-- creating question section -->
-        <section class="w_100 h_65vw pos_rel">
+        <section class="w_100 h_65vw pos_rel questionSection">
 
             <!-- div for head text -->
             <div class="text_align_center h_15">
-                <h3 class="ff_qv fw2 fs_2_5vw">FAQs</h3>
+                <h3 class="ff_qv fw2 fs_2_5vw questionHead">FAQs</h3>
             </div>
 
             <!-- div for questions -->
             <div class="d_flex flex_dir w_100 h_55">
                 <!-- div for each question box -->
-                <div class="w_100 h_35 border_bottom">
-                    <p class="ff_aeonik fw mrg_left_2 fs_1_5vw">
+                <div class="w_100 h_35 border_bottom questionPart ">
+                    <p class="ff_aeonik fw mrg_left_2 fs_1_5vw questionQ">
                         01. Can I Find the right information faster?
                     </p>
                     <!-- div for answer and icon -->
                     <div class="d_flex text h_100 justify_content_spcb pos_rel">
-                        <p class="ff_int fs_1_1vw mrg_left_2 mrg_top_3">
+                        <p class="ff_int fs_1_1vw mrg_left_2 mrg_top_3 questionP">
                             Nulla lectus lectus, suscipit at posuere sit amet, imperdiet sit amet sapien. Donec ornare
                             odio justo, ac <br>efficitur enim fermen. Nam enim ligula, lacinia vitae venenatis quis,
                             suscipit id augue.
                         </p>
                         <!-- div for icon -->
-                        <div class="bg_yellow w_2 h_33 text_align_center border_rad50 pos_abs right_2 top_25">
+                        <div
+                            class="bg_yellow w_2 h_33 text_align_center border_rad50 pos_abs right_2 top_25 questionIcon">
                             <p class="fs_2_5vw">-</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- div for each question box -->
-                <div class="w_100 h_30 border_bottom d_flex align_items_center justify_content_spcb">
-                    <p class="ff_aeonik fw mrg_left_2 fs_1_5vw">
+                <div class="w_100 h_30 border_bottom questionPart d_flex align_items_center justify_content_spcb">
+                    <p class="ff_aeonik fw mrg_left_2 fs_1_5vw questionQ">
                         02. How to share feature demos and ideas?
                     </p>
                     <!-- div for icon -->
-                    <div class="clr_yellow w_2 h_35 text_align_center border_rad50 mrg_right_2 border_blk">
+                    <div
+                        class="clr_yellow w_2 h_35 text_align_center border_rad50 mrg_right_2 border_blk questionIcon2">
                         <p class="fs_2_5vw fw">+</p>
                     </div>
                 </div>
 
                 <!-- div for each question box -->
-                <div class="w_100 h_30 border_bottom d_flex align_items_center justify_content_spcb">
-                    <p class="ff_aeonik fw mrg_left_2 fs_1_5vw">
+                <div class="w_100 h_30 border_bottom questionPart d_flex align_items_center justify_content_spcb">
+                    <p class="ff_aeonik fw mrg_left_2 fs_1_5vw questionQ">
                         03. How to get insights from users?
                     </p>
                     <!-- div for icon -->
-                    <div class="clr_yellow w_2 h_35 text_align_center border_rad50 mrg_right_2 border_blk">
+                    <div
+                        class="clr_yellow w_2 h_35 text_align_center border_rad50 mrg_right_2 border_blk questionIcon2">
                         <p class="fs_2_5vw fw">+</p>
                     </div>
                 </div>
 
                 <!-- div for each question box -->
-                <div class="w_100 h_30 border_bottom d_flex align_items_center justify_content_spcb">
-                    <p class="ff_aeonik fw mrg_left_2 fs_1_5vw">
+                <div class="w_100 h_30 border_bottom questionPart d_flex align_items_center justify_content_spcb">
+                    <p class="ff_aeonik fw mrg_left_2 fs_1_5vw questionQ">
                         04. Can I develop my website without code?
                     </p>
                     <!-- div for icon -->
-                    <div class="clr_yellow w_2 h_35 text_align_center border_rad50 mrg_right_2 border_blk">
+                    <div
+                        class="clr_yellow w_2 h_35 text_align_center border_rad50 mrg_right_2 border_blk questionIcon2">
                         <p class="fs_2_5vw fw">+</p>
                     </div>
                 </div>
@@ -452,7 +475,8 @@
             </div>
 
             <!-- div for yellow banner -->
-            <div class="h_40 w_50 left_25 btm_-15 z_indx_4 bsh_yellow border_rad5 bg_yellow pos_abs text_align_center">
+            <div
+                class="h_40 w_50 left_25 btm_-15 z_indx_4 bsh_yellow border_rad5 bg_yellow pos_abs text_align_center yellowBanner">
 
                 <p class="ff_secure fw fs_2_4vw mrg_top_10">
                     Start upgrading your <br>skills free for this month
@@ -480,14 +504,28 @@
 
         </section>
 
+        <!-- creating mobile menu section -->
+        <section class="menuSection" id="menuSection">
+            <a href="#">
+                ❌
+            </a>
+            <ul class="d_flex flex_dir">
+                <li>Tutorials</li>
+                <li>Case studies</li>
+                <li>Resources</li>
+                <li>Our team</li>
+                <li>Be in call with us</li>
+            </ul>
+        </section>
+
     </main>
     <!------------------------------------------ end of main --------------------------------------->
 
     <!-------------------------------------- creating the footer ---------------------------------->
-    <footer class="h_35vw bg_black pos_rel">
+    <footer class="h_50vw bg_black pos_rel">
 
         <!-- div for top part in footer -->
-        <div class="clr_white d_flex pos_abs btm_15 w_100 justify_content_spca border_bottom h_15">
+        <div class="clr_white d_flex pos_abs btm_15 w_100 justify_content_spca border_bottom h_15 topFooter">
             <!-- div for arrow and text -->
             <div class="d_flex align_items_center gap_2 ">
                 <img width="20%" src="/assets/images/greenArrow.png" alt="">
